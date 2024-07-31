@@ -1,0 +1,143 @@
+/* Add this CSS to your project, e.g., in App.css */
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.chat {
+  width: 50%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.chat-body {
+  padding: 20px;
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  max-width: 60%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#you {
+  align-self: flex-end;
+  background-color: #dcf8c6; /* Light green */
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  margin-left: auto;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 40%;
+  word-wrap: break-word;
+  max-height: fit-content;
+}
+
+#other {
+  align-self: flex-start;
+  background-color: #ADD8E6; /* Light blue */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 40%;
+  word-wrap: break-word;
+}
+
+.message div {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-meta {
+  font-size: 0.8em;
+  color: gray;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-footer button {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-footer button:hover {
+  background-color: #45a049;
+}
